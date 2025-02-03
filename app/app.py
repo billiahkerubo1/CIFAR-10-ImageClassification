@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing import image
 import numpy as np
 
 app = Flask(__name__)
-model = load_model('baseline_cnn_model.h5')
+model = load_model('vgg16_model.h5')
 
 @app.route('/predict', methods=['POST'])
 def predict():
